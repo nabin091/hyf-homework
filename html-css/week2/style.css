@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+}
+body {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.banner {
+  font-family: sans-serif;
+  background-color: rgb(179, 168, 172, 0);
+  padding-top: 20px;
+  height: 150px;
+  padding-inline-start: 200px;
+}
+.banner h1,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 0.5em;
+}
+.banner h5 {
+  color: rgb(137, 141, 137);
+  font-size: 15px;
+}
+
+.list ul {
+  list-style-type: none;
+}
+.list li {
+  display: inline;
+  padding: 20px;
+  padding-inline-start: 170px;
+  align-items: center;
+}
+.list li:nth-child(2) {
+  padding: 2em;
+}
+
+#photo {
+  border: 1px;
+  width: 100%;
+  height: 400px;
+  padding-top: 40px;
+}
+#main-context {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 20px;
+  position: relative;
+}
+
+#main-context p {
+  color: rgb(137, 141, 137);
+  padding: 1em;
+}
+
+.aside:nth-of-type(1) {
+  width: 31%;
+  hyphens: manual;
+}
+.aside:nth-of-type(2) {
+  width: 62%;
+  hyphens: manual;
+  padding-left: 50px;
+}
+.aside:nth-of-type(3) {
+  width: 62%;
+  list-style-type: none;
+  hyphens: none;
+  order: 2;
+  padding: 32px 25px;
+}
+
+.aside:nth-of-type(4) {
+  width: 31%;
+  hyphens: none;
+  padding-top: 32px;
+
+  padding-right: 12px;
+  order: 1;
+}
+
+.main-context h4 {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+#footer {
+  background-color: rgba(164, 12, 235, 0.993);
+  padding-top: 25px;
+  font-family: sans-serif;
+  justify-content: space-evenly;
+  display: flex;
+  height: auto;
+}
+#map1 {
+  width: 100px;
+  height: 100px;
+}
+.sub-footer li {
+  padding: 2em 0em 0.5em;
+  font-weight: bold;
+}
+
+.sub-footer ul {
+  padding: 1em;
+  list-style-type: none;
+}
+@media only screen and (max-width: 400px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+  }
+  .list ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+  }
+  #footer {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #map1 {
+    width: 50%;
+    height: auto;
+  }
+}
