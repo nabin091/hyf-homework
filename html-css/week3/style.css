@@ -1,0 +1,126 @@
+body {
+  margin: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+.form {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+input {
+  height: 25px;
+}
+
+#country {
+  height: 25px;
+  width: 15%;
+}
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.image-box {
+  display: inline-block;
+  padding: 70px;
+}
+.main {
+  display: flex;
+}
+.logo {
+  height: 50px;
+  width: 60px;
+  background-color: grey;
+  text-align: center;
+  padding-right: 40px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.navi {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: grey;
+  border: 1px solid black;
+  margin-left: 800px;
+}
+
+.progress-bar {
+  width: 100%;
+  border: 1px solid black;
+}
+#bar {
+  width: 25%;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+}
+#bar1 {
+  width: 50%;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+}
+#bar2 {
+  width: 75%;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+}
+#bar3 {
+  width: 100%;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+}
+
+.submit {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: grey;
+  border: 1px solid black;
+  float: right;
+}
+/*media quries  for smart phones*/
+@media only screen and(max-width:320px) {
+  body {
+    padding: 10px 15px;
+  }
+
+  p {
+    width: 100%;
+  }
+  fieldset {
+    padding: 0.5em;
+  }
+
+  .image-box {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form input,
+  form select,
+  form label {
+    width: 100%;
+  }
+  form label {
+    text-align: left;
+  }
+  form textarea {
+    width: 100%;
+  }
+
+  .submit {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
