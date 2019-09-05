@@ -1,0 +1,54 @@
+header h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+footer {
+  min-height: 150px;
+  width: 100%;
+}
+
+header li {
+  display: inline;
+  padding-left: 20px;
+  list-style-type: none;
+}
+header a {
+  float: right;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 30px;
+}
+.container {
+  display: flex;
+}
+.intro {
+  background-color: rgb(222, 245, 242);
+  width: 500px;
+}
+
+.intro li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+#profilepic {
+  height: 200px;
+  width: 200px;
+  padding-left: 100px;
+}
+
+.sub-container {
+  padding-left: 30px;
+}
+.sub-container li {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-left: 0;
+}
+#exp {
+  padding-right: 20px;
+  padding-top: 0px;
+}
