@@ -14,7 +14,7 @@ const dogYear = dogYearFuture - dogYearOfBirth ;
 if (shouldShowResultInDogYears = 'true'){
      console.log("your dog will be "+ dogYear *7 +" dog years old in 2027" + ".")
 }
-else if (shouldShowResultInDogYears = 'false'){
+else if(shouldShowResultInDogYears = 'false'){
     console.log("your dog will be "+ dogYear +" human years old in 2027" + ".")
 }
 
@@ -29,7 +29,7 @@ else if (shouldShowResultInDogYears = 'false'){
      console.log ("peter paying too much")
  }
  else{
-     console.log ("peter paying fine")
+     console.log ("peter is not paying too much")
  }
  
 
@@ -40,17 +40,19 @@ let juliaHousePrice = jvolumeInMeters*2.5*1000+70*300;
 console.log(juliaHousePrice);
 
 if (juliaHousePrice < 100000){
-    console.log ("julia is paying too little")
+    console.log ("Julia is paying too much")
 }
 else{
-    console.log("julia is paying more")
+    console.log("Julia is paying too little")
 }
 
 
 // Ez Namey (startup name generator) optional
 const firstWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
 const secondWords = ["frigg","Accenture","PWD","Novo","McKney","ehack","Novozyme","grow","Uni","Action"];
-const randomNumber = Math.floor(Math.random() * 10 ) + 1;
+const randomNumber = Math.floor(Math.random() * 10 ) + 0;
 let startupName = [firstWords[randomNumber] + secondWords[randomNumber]];
 
 console.log (`The startup ${startupName} contains ${startupName.length} characters`)
+console.log (randomNumber) //practice
+console.log (startupName.length) //practice
