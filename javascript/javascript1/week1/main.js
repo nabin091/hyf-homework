@@ -7,52 +7,54 @@ const result = "you will be" + " "+age + " " + "years old in"+" "+ yearFuture +"
 console.log(result);
 
 
-//goodboy-oldboy (A dog age calculator)
 const dogYearOfBirth = 2017;
-const dogYearFuture = 2027;
-const dogYear = dogYearFuture - dogYearOfBirth ;
-if (shouldShowResultInDogYears = 'true'){
-     console.log("your dog will be "+ dogYear *7 +" dog years old in 2027" + ".")
-}
-else if(shouldShowResultInDogYears = 'false'){
-    console.log("your dog will be "+ dogYear +" human years old in 2027" + ".")
-}
+const dogYearOfFuture = 2027;
+const dogYear = dogYearOfFuture - dogYearOfBirth
+
+const shouldshowResultInDogYears = true;
+
+if (shouldshowResultInDogYears) { console.log 
+
+("your dog will be"+" " + dogYear*7 +" " + "dog years old in" + dogYearOfFuture );}
+else if
+(shouldshowResultInDogYears) { console.log 
+    ("your dog will be" + dogYear + "human years old in" + dogYearOfFuture );}  
+
+    //  peter house 
+    
+    const peterHouseVolumeInMeter = 8*10*10;
+    const peterGardenSizeM2 = 100;
+    peterHousePrice = peterHouseVolumeInMeter * 2.5 * 1000 + peterGardenSizeM2 * 300
+    console.log(peterHousePrice);
+    if (peterHousePrice>2500000 ) {           // > greater sign
+        console.log ("peter paying ok")
+    }
+    else
+    console.log("peter paying too much")
+    // julia house
+    
+    const juliaHouseVolumeInMeter = 5*11*8;
+    const juliaGardenSizeM2 = 70;
+    juliaHousePrice = juliaHouseVolumeInMeter * 2.5 * 1000 + juliaGardenSizeM2 * 300
+    console.log(juliaHousePrice);
+    if (juliaHousePrice<1000000 ) {
+        console.log("julia paying too much")
+    }
+    else 
+    console.log("julia paying too little")
+
+    // start up name 
+
+    let firstWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
+    let  secondWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
+    let randomNumber1 = Math.floor(Math.random() * 10 ) + 0;
+    let randomNumber2 = Math.floor(Math.random() * 10 ) + 0;
+    let startUpName = firstWords[randomNumber1] + " " + secondWords[randomNumber2];
+    const resultStartUp = "the start up"+" "+ startUpName + " " + "contains" + " " + startUpName.length + " characteers";
+    console.log(resultStartUp);
+    
 
 
- // Housey pricey (A house price estimator)
- 
- const pvolumeInMeters = 8*10*10;
- let peterHousePrice = pvolumeInMeters*2.5*1000+100*300;
- console.log (peterHousePrice);
+    
 
- if (peterHousePrice > 250000){
-     console.log ("peter paying too much")
- }
- else{
-     console.log ("peter is not paying too much")
- }
- 
-
- // julia house 
- 
-const jvolumeInMeters = 5*11*8;
-let juliaHousePrice = jvolumeInMeters*2.5*1000+70*300;
-console.log(juliaHousePrice);
-
-if (juliaHousePrice < 100000){
-    console.log ("Julia is paying too much")
-}
-else{
-    console.log("Julia is paying too little")
-}
-
-
-// Ez Namey (startup name generator) optional
-const firstWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
-const secondWords = ["frigg","Accenture","PWD","Novo","McKney","ehack","Novozyme","grow","Uni","Action"];
-const randomNumber = Math.floor(Math.random() * 10 ) + 0;
-let startupName = [firstWords[randomNumber] + secondWords[randomNumber]];
-
-console.log (`The startup ${startupName} contains ${startupName.length} characters`)
-console.log (randomNumber) //practice
-console.log (startupName.length) //practice
+    
