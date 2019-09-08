@@ -1,10 +1,13 @@
-//Age-ify (A future age calculator)
+// ex 1 //Age-ify (A future age calculator)
+
 
 const yearOfBirth = 1987;
 const yearFuture = 2027;
 const age = yearFuture - yearOfBirth;
 const result = "you will be" + " "+age + " " + "years old in"+" "+ yearFuture +".";
 console.log(result);
+
+//goodboy-oldboy (A dog age calculator)
 
 
 const dogYearOfBirth = 2017;
@@ -20,7 +23,8 @@ else if
 (shouldshowResultInDogYears) { console.log 
     ("your dog will be" + dogYear + "human years old in" + dogYearOfFuture );}  
 
-    //  peter house 
+    //  peter house ex3 // Housey pricey (A house price estimator)
+
     
     const peterHouseVolumeInMeter = 8*10*10;
     const peterGardenSizeM2 = 100;
@@ -43,7 +47,8 @@ else if
     else 
     console.log("julia paying too little")
 
-    // start up name 
+     // Ez Namey (startup name generator) optional
+
 
     let firstWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
     let  secondWords = ["Awesome","Easy","Corporate","Baresso","Java","Hack","Joe","Nohan","Newbie","classy"];
@@ -55,6 +60,5 @@ else if
     
 
 
-    
 
-    
+
