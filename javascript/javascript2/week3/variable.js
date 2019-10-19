@@ -11,7 +11,7 @@ array.forEach(function(item){
 function func1 (){
     console.log('first function');
 }
-function func2 (){q
+function func2 (){
     console.log('second function');
 }
 function func3 (){
