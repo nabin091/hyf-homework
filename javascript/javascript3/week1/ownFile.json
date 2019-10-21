@@ -1,0 +1,40 @@
+
+[
+    {
+    "name": "Nabin",
+    "age": 30,
+    "adress": "Copenhagen",
+    "interests" :["playing football","reading books","travelling"]
+},
+{
+    "computer":[
+        { 
+            "name":"apple",
+            "processor":["inter core i5", "inter core i3", "intel core i7"],
+            "speed":[4.0, 4.1, 4.2, 4.8],
+            "size":[ 
+                {"value":13, "id": "inch"},
+                {"value": 15, "id":"inch"},
+                {"vlaue": 21,  "id":"inch"}
+            ]    
+        }
+    ],
+        
+            
+    "pets" : ["dog","cat"],
+    "music":["pop","rock","hip hop"],
+    "artists":[
+            {
+                "name": "Bruno mars",
+                "age": 35,
+                "language" : "english"
+            },
+            {
+                 "name": "Ed sheeran",
+                 "age": 40,
+                 "langugage": "english"
+            }
+            ]
+    }
+]
+    
