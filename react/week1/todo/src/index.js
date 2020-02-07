@@ -23,12 +23,12 @@ class TodoList extends React.Component {
         return (
             <div>
                 <h1>Todo List</h1>
-                <form className="todos"> 
+                <ul className="todos"> 
                     { todos.map(todoItem => (
                         <Task task={todoItem}/>
                     ))
                     }
-                </form>
+                </ul>
             </div>
         );
     }
