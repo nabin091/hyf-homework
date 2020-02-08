@@ -1,0 +1,51 @@
+
+
+body {
+	box-sizing: border-box;
+	font-family: 'sans-serif';
+	margin: 0;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+  }
+button {
+	margin-left :20px;
+	color: rgb(9, 12, 11);
+}
+
+
+.todo-container {
+	max-width: 800px;
+	box-shadow: 1px 1px 1px #f5fffa;
+	padding: 36px 24px 54px 24px;
+	background: rgb(150, 145, 145);
+	color: white;
+	margin: auto;
+	height: 100vh;
+}
+
+.form-label {
+	overflow: hidden;
+	font-size: 24px;
+	color: #75cfa5;
+}
+
+.form-input {
+	width: 100%;
+	padding: 10px;
+	margin: 16px 0;
+	box-sizing: border-box;
+	display: inline-block;
+	outline: none;
+	font-size: 20px;
+}
+
+.todo {
+	padding: 12px 0;
+	border-bottom: 1px solid #c8ccce;
+	cursor: pointer;
+	user-select: none;
+	font-size: 20px;
+	
+}
