@@ -3,10 +3,8 @@ import React, { useState } from 'react';
 import Item from './Item';
 import TodoForm from "./TodoForm";
 
-const Todo = () => {
-
-
-	const taskItem = [
+function Todo() {
+         const  [todos,setTodos] = useState([
 		{
 			text: 'Get out of bed',
 			isCompleted: false
@@ -20,26 +18,22 @@ const Todo = () => {
 		{
 			text: 'Eat breakfast',
 			isCompleted: false
-		},
-	];
+		}
+	]);
 
-	/**
-	 * todos: is taskItem, whose value will be equal to taskItem that we pass in useState() as a parameter
-	 * setTodos is like setState
-	 */
-	const [ todos, setTodos ] = useState( taskItem );
-
-	const addToDo = ( text ) => {
-		const newToDos = [ ...todos, { text } ];
-		setTodos( newToDos );
+	
+       const addToDo = ( text ) => {
+	       const newToDos = [ ...todos, { text, isCompleted: false } ];
+	       setTodos( newToDos );
 	};
 
 	const handleItemClick = ( index ) => {
 		// Get all todos array from state.
 		const newTodos = [ ...todos ];
-
+                //console.log(todos[index]);
 		// Set isCompleted property to reverse of what its current value is ( boolean )
-		newTodos[ index ].isCompleted = ! newTodos[ index ].isCompleted;
+		newTodos[ index ].isCompleted = true;
+               //console.log(todos[index]);
 
 		// Set State with the new array of todos with the updated value
 		setTodos( newTodos );
@@ -62,7 +56,7 @@ const Todo = () => {
 			<h1 className="main-heading">Todo App</h1>
 			<TodoForm addToDo={addToDo}/>
 			<div className="todo-list">
-				{ todos.length ? (
+				{ 
 					todos.map( ( item, index ) => (
 						<Item
 							key={`${ item.text }-${ index }`}
@@ -72,7 +66,7 @@ const Todo = () => {
 							handleRemoveClick={handleRemoveClick}
 						/>
 					) )
-				) : '' }
+                                   } 
 			</div>
 		</div>
 	);
