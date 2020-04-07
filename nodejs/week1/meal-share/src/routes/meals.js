@@ -1,11 +1,12 @@
 const express = require("express");
-const app = express();
 const fs = require("fs");
+const app = express();
+const mealsData = fs.readFileSync(__dirname + "/../data/meals.json");
+const meals = JSON.parse(mealsData);
+const reviewData = fs.readFileSync(__dirname + "/../data/reviews.json");
+const reviews = JSON.parse(reviewData);
 
-const meals = JSON.parse(fs.readFileSync(__dirname + "/data/meals.json"));
-const reviews = JSON.parse(fs.readFileSync(__dirname + "/data/reviews.json"));
-
-app.get("/meals",function (req, res)=>{
+app.get("/", (req, res)=>{
     meals.map (meal =>{
         meal.reviews = [];
         for (let i = 0; i < reviews.length ; i++){

@@ -1,12 +1,10 @@
 const express = require("express");
-const app = express();
 const fs = require("fs");
+const app = express();
+const reservations = JSON.parse(fs.readFileSync(__dirname + "/../data/reservations.json"));
 
-const resevations = JSON.parse(fs.readFileSync(__dirname + "/data/reservations.json"));
-
-app.get("/reservations",function(req, res)=> {
+app.get("/", (req, res) => {
     res.json(reservations);
-        
 });
 
 module.exports = app;

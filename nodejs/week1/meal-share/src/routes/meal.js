@@ -1,12 +1,12 @@
-const express = require('express');
-const app = express();
+const express = require("express");
 const fs = require("fs");
+const app = express();
+const mealData = fs.readFileSync(__dirname + "/../data/meals.json");
+const meals = JSON.parse(mealData);
+const reviewData = fs.readFileSync(__dirname + "/../data/reviews.json");
+const reviews = JSON.parse(reviewData);
 
-// Respond with the json for a random meal (including it's reviews)
-const meals = JSON.parse(fs.readFileSync(__dirname + "/data/meals.json"));
-const reviews = JSON.parse(fs.readFileSync(__dirname + "/data/reviews.json"));
-
-app.get ("/meal",function(req, res) {
+app.get ("/",(req, res) => {
     const random = Math.floor(Math.random()* meals.length);
     const ranmdoMeal = meals.filter(meal => meal.id ===random);
     res.json(randomMeal)
@@ -24,4 +24,4 @@ app.get ("/meal",function(req, res) {
     
 
     
-    module.export = app;
+    module.exports = app;

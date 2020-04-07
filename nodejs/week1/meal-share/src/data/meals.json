@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "momo",
+      "maxNumberOfGuests": 5,
+      "description": "A nice night out eating delicious nepali food",
+      "createdAt": "2019/12/5 14:34",
+      "price": 67
+    },
+    {
+      "id": 2,
+      "title": "chowmin",
+      "maxNumberOfGuests": 6,
+      "description": "nepali food for luch",
+      "createdAt": "2019/12/5 14:34",
+      "price": 50
+    },
+    {
+       "id": 3,
+       "title": "Burger",
+       "maxNumberOfGuests": 10,
+       "description": "chicken burgrer and fries",
+       "createdAt": "2019/12/5 14:34",
+       "price": 80
+    },
+    {
+        "id": 4,
+        "title": "Durum",
+        "maxNumberOfGuests": 10,
+        "description": "chicken durum",
+        "createdAt": "2019/12/5 14:34",
+        "price": 40
+    }
+          
+      
+  ]
